@@ -1,0 +1,14 @@
+project: empty-test
+status: scaffolded
+last_session:
+  date: 2026-04-30
+  summary: >-
+    Initial context system created (CLAUDE.md plus .claude/ tracking files).
+    No application features built yet — project is the default create-next-app
+    scaffold with Tailwind v4.
+next_focus: Awaiting user direction on the first feature to build.
+blockers: []
+notes:
+  - Supabase, Stripe, and Vercel integrations are not wired yet.
+  - Next.js 16.2.4 is newer than baseline training data; consult node_modules/next/dist/docs/ before any Next.js work.
+  - .gitignore allows the four .claude/ context files but keeps .claude/settings.local.json ignored.
