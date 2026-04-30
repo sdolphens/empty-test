@@ -11,6 +11,8 @@ empty-test/
 │   ├── BUILD_INDEX.md
 │   ├── PROGRESS.md
 │   └── STATE.yml
+├── .husky/
+│   └── pre-commit          # Runs `npx lint-staged`
 ├── public/                 # Static assets
 │   ├── file.svg
 │   ├── globe.svg
@@ -23,13 +25,15 @@ empty-test/
 │       ├── globals.css     # Tailwind layer + global styles
 │       ├── layout.tsx      # Root layout (Geist + Geist_Mono fonts)
 │       └── page.tsx        # Default landing page
+├── .prettierignore
+├── .prettierrc.json        # Prettier defaults (semi, double quotes, printWidth 100)
 ├── AGENTS.md               # Next.js version-specific rules (imported by CLAUDE.md)
 ├── CLAUDE.md               # Project guide for Claude
 ├── README.md
-├── eslint.config.mjs       # ESLint 9 flat config
+├── eslint.config.mjs       # ESLint 9 flat config (Next + TS + prettier-disable)
 ├── next-env.d.ts           # Next-managed TS env (do not edit)
 ├── next.config.ts          # Next.js config (no overrides yet)
-├── package.json
+├── package.json            # `lint-staged` config block lives here
 ├── package-lock.json
 ├── postcss.config.mjs      # Tailwind v4 via @tailwindcss/postcss
 └── tsconfig.json           # strict; "@/*" → "./src/*"

@@ -3,12 +3,16 @@ status: scaffolded
 last_session:
   date: 2026-04-30
   summary: >-
-    Initial context system created (CLAUDE.md plus .claude/ tracking files).
-    No application features built yet — project is the default create-next-app
-    scaffold with Tailwind v4.
+    Added code quality tooling: Prettier (with eslint-config-prettier wired into
+    the flat config), Husky pre-commit hook, and lint-staged. ESLint runs with
+    --fix and Prettier --write on staged JS/TS/JSON/CSS/MD/YAML files before
+    every commit. Verified npm run lint, npm run build, and the pre-commit hook
+    on a real commit.
 next_focus: Awaiting user direction on the first feature to build.
 blockers: []
 notes:
   - Supabase, Stripe, and Vercel integrations are not wired yet.
   - Next.js 16.2.4 is newer than baseline training data; consult node_modules/next/dist/docs/ before any Next.js work.
   - .gitignore allows the four .claude/ context files but keeps .claude/settings.local.json ignored.
+  - Pre-commit hook lives in .husky/pre-commit and runs `npx lint-staged`. lint-staged config is in package.json.
+  - Prettier defaults: semi, double quotes, trailing-comma all, printWidth 100, lf endings (.prettierrc.json).
