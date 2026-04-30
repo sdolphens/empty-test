@@ -2,6 +2,13 @@
 
 Reverse-chronological session log. Newest entry on top.
 
+## 2026-04-30 — GitHub Actions CI added
+
+- Created `.github/workflows/ci.yml` with a single `verify` job on `ubuntu-latest`. Triggers on every push and on pull requests targeting `main`.
+- Job steps: `actions/checkout@v4`, `actions/setup-node@v4` (Node 22 + npm cache), `npm ci`, `npm run lint`, `npx tsc --noEmit`, `npm run build`. Any failure fails the job and blocks the PR once branch protection is enabled.
+- Verified the same three commands pass locally before pushing.
+- Branch protection on `main` is configured manually in GitHub Settings → Branches (steps in the PR description); CI must run once before the `verify` check appears as a selectable required status.
+
 ## 2026-04-30 — Code quality tooling added
 
 - Installed Prettier 3.8.3 and `eslint-config-prettier` 10.1.8. Wired the flat preset (`eslint-config-prettier/flat`) into `eslint.config.mjs` so formatting rules don't conflict with ESLint.

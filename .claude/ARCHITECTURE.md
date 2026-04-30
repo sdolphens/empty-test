@@ -11,6 +11,9 @@ empty-test/
 │   ├── BUILD_INDEX.md
 │   ├── PROGRESS.md
 │   └── STATE.yml
+├── .github/
+│   └── workflows/
+│       └── ci.yml          # Lint + type check + build on push / PR to main
 ├── .husky/
 │   └── pre-commit          # Runs `npx lint-staged`
 ├── public/                 # Static assets
