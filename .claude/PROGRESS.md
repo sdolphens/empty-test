@@ -2,6 +2,13 @@
 
 Reverse-chronological session log. Newest entry on top.
 
+## 2026-10-13 — Plan for the /idea-forge skill
+
+- Researched Nate Herk's `/roast-room` skill (X post plus the MIT-licensed `nateherkai/roast-room` repo): a Chair runs 7 persona sub-agents through 3 rounds, with weighted scoring, overrides, and a verdict report.
+- Wrote `docs/plans/idea-forge-skill.md`: a council skill that debates an idea, forges improved remixes from the seats' upgrades (with a user checkpoint), and ratifies a path to success. It uses 7 lens seats (Strategist, Customer, Money, Growth, Operator, Risk, Contrarian) instead of real-person simulations, plus a Node scoring script, a card validator, 6 evals, and a ready-to-paste `/goal` definition of done.
+- Named it `/idea-forge` because `/goal` is a built-in Claude Code command.
+- No application code touched. Build has not started; Phase 0 needs the user's OK to extend CLAUDE.md "Allowed" and `.gitignore` to `.claude/skills/`, `.claude/agents/`, and `forge-sessions/`.
+
 ## 2026-04-30 — GitHub Actions CI added
 
 - Created `.github/workflows/ci.yml` with a single `verify` job on `ubuntu-latest`. Triggers on every push and on pull requests targeting `main`.

@@ -1,16 +1,19 @@
 project: empty-test
-status: scaffolded
+status: scaffolded (idea-forge skill planned)
 last_session:
-  date: 2026-04-30
+  date: 2026-10-13
   summary: >-
-    Added GitHub Actions CI (.github/workflows/ci.yml). Triggers on every push
-    and on pull requests targeting main. Runs npm ci, npm run lint,
-    npx tsc --noEmit, and npm run build on ubuntu-latest with Node 22 and the
-    setup-node npm cache. Verified all three commands pass locally before
-    pushing. Branch protection on main still needs to be enabled manually in
-    GitHub Settings → Branches (instructions in the PR description).
-next_focus: Awaiting user direction on the first feature to build.
+    Researched Nate Herk's /roast-room skill (7 persona sub-agents, 3 debate
+    rounds, weighted scoring, verdict report) and wrote
+    docs/plans/idea-forge-skill.md: a plan for /idea-forge, a council of 7
+    lens sub-agents that debates an idea, forges improved remixes, and
+    ratifies a path to success. Plan only; nothing built yet.
+next_focus: >-
+  Get the user's approval on the plan's decisions (section 13), then build
+  /idea-forge phase by phase (start with Phase 0 repo prep). The plan's
+  section 14 holds a ready-to-paste /goal condition.
 blockers:
+  - /idea-forge Phase 0 needs approval to extend CLAUDE.md "Allowed" and .gitignore to .claude/skills/, .claude/agents/, and forge-sessions/.
   - Branch protection on main not yet enabled — do this in GitHub Settings → Branches once the CI workflow has run at least once so the `verify` check is selectable.
 notes:
   - Supabase, Stripe, and Vercel integrations are not wired yet.

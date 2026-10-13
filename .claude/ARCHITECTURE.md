@@ -11,6 +11,9 @@ empty-test/
 │   ├── BUILD_INDEX.md
 │   ├── PROGRESS.md
 │   └── STATE.yml
+├── docs/
+│   └── plans/
+│       └── idea-forge-skill.md  # Plan for the /idea-forge Claude Code skill (not built yet)
 ├── .github/
 │   └── workflows/
 │       └── ci.yml          # Lint + type check + build on push / PR to main
@@ -61,4 +64,5 @@ empty-test/
 - API route handlers (`src/app/api/`).
 - Middleware (`src/middleware.ts`).
 - Test setup or test files.
+- `.claude/skills/` and `.claude/agents/` (planned for `/idea-forge`; see `docs/plans/idea-forge-skill.md`).
 - Environment variable schema / loader.

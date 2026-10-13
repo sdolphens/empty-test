@@ -1,10 +1,10 @@
 # Build Index
 
-Tracks features built in this project. Empty until the first feature ships.
+Tracks features built in this project.
 
 | Feature | Status | Owner | Routes / Files | Notes |
 | --- | --- | --- | --- | --- |
-| _none yet_ | — | — | — | — |
+| `/idea-forge` Claude Code skill (idea debate council) | planned | Claude | `docs/plans/idea-forge-skill.md` → `.claude/skills/idea-forge/`, `.claude/agents/forge-*.md` | Plan only; Phase 0 needs CLAUDE.md + .gitignore changes approved |
 
 ## Conventions
 - **Status values:** `planned` → `in-progress` → `shipped` (use `removed` for deleted features).
